@@ -1,0 +1,37 @@
+#logo {
+	position: fixed;
+	top: var(--gs);
+	left: var(--g0);
+	width: auto;
+	color: var(--lr);
+	font-size: var(--g0);
+}
+#logo img {
+	height: var(--g0);
+}
+
+#home div {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	margin: var(--g2) 0;
+}
+
+#home .btn {
+	margin-right: var(--g2);
+}
+
+nav {
+	position: absolute;
+	top: var(--gs);
+	right: var(--g0);
+}
+nav a {
+	display: inline-block;
+	margin-left: var(--g0);
+}
+
+nav a:hover {
+	transform-origin: bottom left;
+	transform: skew(-7deg) !important;
+}
