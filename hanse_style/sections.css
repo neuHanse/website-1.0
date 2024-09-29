@@ -1,0 +1,214 @@
+/* ------------------------------------------------------ NAV */
+nav {
+	position: fixed;
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	top: var(--gs);
+	padding: 0 var(--g1);
+}
+
+#logo {
+	color: var(--lr);
+	font-size: var(--g0);
+}
+
+#logo img {
+	height: var(--g0);
+}
+
+#manifesto-link {
+	margin-right: var(--g1);
+}
+
+/* ------------------------------------------------------ HANSE */
+
+#hanse {
+	padding-bottom: var(--g4);
+}
+
+#hanse input[type='email'] {
+	margin-right: var(--g0);
+	width: calc(var(--max) / 3);
+}
+
+#hanse form {
+	margin-top: var(--g1);
+}
+
+.arr {
+	position: absolute;
+	bottom: var(--g0);
+	left: 50%;
+	transform: translateX(-50%);
+	animation: fadeBounce 8s infinite;
+}
+
+.arr img {
+	height: var(--g1);
+}
+
+@keyframes fadeBounce {
+	0%,
+	20%,
+	50%,
+	80%,
+	100% {
+		opacity: 0;
+		transform: translateY(calc(-1 * var(--gs)));
+	}
+
+	40% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+/* ------------------------------------------------------ NAV-SECTION */
+
+#nav-section {
+	padding: var(--g3) var(--g1);
+}
+
+#nav-section a {
+	font-size: var(--g1);
+	color: var(--lr);
+	font-style: italic;
+}
+
+#nav-section a:hover {
+	color: var(--dr);
+}
+
+#nav-section img {
+	height: var(--g1);
+	transform: skew(-7deg);
+}
+
+/* ------------------------------------------------------ MANIFESTO*/
+
+#manifesto {
+	padding: 0 var(--g1) var(--g4) var(--g1);
+}
+
+#manifesto h3 {
+	margin-top: var(--g2);
+}
+#manifesto span {
+	color: var(--dr);
+	font-weight: 600;
+}
+
+#manifesto-header {
+	margin-top: var(--g3);
+	margin-bottom: 0;
+}
+#manifesto-header span {
+	color: var(--lr);
+	font-weight: 400;
+}
+
+#manifesto .small {
+	margin: 0;
+}
+
+#manifesto-header img {
+	height: var(--g2);
+}
+
+/* ------------------------------------------------------ CONTACT */
+
+#contact h2 {
+	margin-top: var(--g2);
+}
+
+#contact h4 a {
+	font-size: var(--g1);
+	color: var(--lr);
+	font-style: italic;
+}
+
+#contact h4 a:hover {
+	color: var(--dr);
+}
+
+#contact form {
+	margin: var(--g2) 0;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+
+#contact form input,
+#contact form button {
+	width: 100%;
+}
+
+/* ------------------------------------------------------ MOBILE */
+
+@media only screen and (max-width: 700px) {
+	#hanse {
+		padding-top: var(--g3);
+	}
+	#hanse form {
+		display: flex;
+		flex-direction: column;
+		margin-top: var(--g2);
+	}
+
+	#hanse input[type='email'] {
+		margin-right: 0;
+	}
+
+	#hanse input[type='email'],
+	#hanse form button {
+		width: 90vw;
+	}
+
+	#contact form input,
+	#contact form button,
+	#contact textarea {
+		width: 90vw;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	section,
+	nav {
+		padding-left: var(--g0) !important;
+		padding-right: var(--g0) !important;
+	}
+
+	h1 {
+		font-size: var(--g2);
+		margin-bottom: var(--g2);
+	}
+
+	h2 {
+		font-size: var(--g1);
+	}
+	h3,
+	h4 {
+		font-size: var(--g0);
+		font-weight: 600;
+	}
+
+	#nav-sub {
+		display: none;
+	}
+
+	#nav-section a,
+	#contact h4 a {
+		font-size: var(--g0);
+	}
+
+	#nav-section {
+		min-height: 70vh;
+	}
+
+	#manifesto-header img {
+		height: var(--g1);
+	}
+}
