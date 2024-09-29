@@ -66,14 +66,27 @@
 			</h3>
 
 			<form
-				action="#"
-				method="post">
+				action="https://formsubmit.co/contact@neuhanse.com"
+				method="POST">
 				<input
 					type="email"
 					id="email"
 					name="email"
 					placeholder="Your email address:"
 					required />
+				<input
+					type="hidden"
+					name="_next"
+					value="https://neuhanse.com/contact.html" />
+				<input
+					type="hidden"
+					name="_captcha"
+					value="false" />
+				<input
+					type="text"
+					name="_honey"
+					style="display: none" />
+
 				<button type="submit">Join us now!</button>
 			</form>
 
@@ -183,8 +196,8 @@
 			<br />
 
 			<form
-				action="#"
-				method="post">
+				action="https://formsubmit.co/contact@neuhanse.com"
+				method="POST">
 				<input
 					type="email"
 					id="contact-email"
@@ -197,6 +210,19 @@
 					placeholder="Tell me what you think about neu Hanse"
 					rows="7"
 					cols="65"></textarea>
+				<input
+					type="hidden"
+					name="_next"
+					value="https://neuhanse.com/contact.html" />
+				<input
+					type="hidden"
+					name="_captcha"
+					value="false" />
+				<input
+					type="text"
+					name="_honey"
+					style="display: none" />
+
 				<button type="submit">Send Message</button>
 			</form>
 
