@@ -179,6 +179,10 @@ nav {
 }
 
 @media only screen and (max-width: 500px) {
+	.none500 {
+		display: none;
+	}
+
 	section,
 	nav {
 		padding-left: var(--g0) !important;

@@ -19,3 +19,17 @@
 #contact-page a:hover {
 	color: var(--lr);
 }
+
+@media only screen and (max-width: 500px) {
+	#contact-page {
+		padding: var(--g3) var(--g0);
+	}
+	#nav-sub {
+		margin-top: var(--gs);
+		display: inline;
+	}
+
+	#contact-page h3 {
+		font-size: var(--g1);
+	}
+}
