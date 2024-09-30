@@ -167,6 +167,10 @@ nav {
 		width: 90vw;
 	}
 
+	.arr {
+		display: none;
+	}
+
 	#contact form input,
 	#contact form button,
 	#contact textarea {

@@ -1,0 +1,21 @@
+/* ------------------------------------------------------ contact-page */
+#contact-page {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#contact-page p,
+#contact-page a {
+	width: 100%;
+	max-width: 30em;
+}
+
+#contact-page a {
+	color: var(--dr);
+}
+
+#contact-page a:hover {
+	color: var(--lr);
+}
